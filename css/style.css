@@ -11,9 +11,12 @@ body{
     font-family: sans-serif;
 }
 
+/* MOBILE FIRST */
+
 /* HEADER */
-header{
-    padding: 16px 32px;
+header nav{
+    margin: 0 auto;
+    width: 400px;
     color: white;
 }
 
@@ -27,6 +30,7 @@ header{
     margin: 0 auto;
     width: 80%;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .big-card{
@@ -51,3 +55,47 @@ header{
 }
 
 /* MEDIA QUERY RESPONSIVE */
+
+/*TABLET*/
+@media screen and (min-width:768px) {
+    .container {
+        background-color: rgb(255, 136, 0);
+        width:700px;
+    }
+
+    /* CARDS */
+
+    #cards .big-card{
+        width: 65%;
+    }
+
+    #cards .small-card{
+        width: 30%;
+    }
+
+    /* WORKWITHUS */
+    #work-with-us .small-card{
+        width: 320px;
+    }
+
+    /* ABOUT US */
+    #about-us .big-card{
+        width: 65%;
+    }
+
+    #about-us .small-card{
+        width: 30%;
+    }
+
+}
+/* DESKTOP */
+@media screen and (min-width:992px) {
+    .container {
+        background-color: rgb(230, 208, 14);
+        width: 900px;
+    }
+
+    #work-with-us .small-card{
+        width: 280px;
+    }
+}

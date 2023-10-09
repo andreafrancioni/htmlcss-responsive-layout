@@ -95,6 +95,14 @@ header nav{
         width: 900px;
     }
 
+    #strategic-plan .big-card{
+        width: 65%;
+    }
+
+    #strategic-plan .small-card{
+        width: 30%;
+    }
+
     #work-with-us .small-card{
         width: 280px;
     }

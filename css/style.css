@@ -64,7 +64,6 @@ header img{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: center;
     gap: 32px;
     line-height: 2em;
 
@@ -72,14 +71,12 @@ header img{
 
 .small-card{
     width: 100%;
-    min-height: 300px;
     border-radius: 20px;
     margin: 16px 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     text-align: center;
     gap: 32px;
     line-height: 2em;
@@ -145,6 +142,86 @@ img{
     border-radius: 50%;
 }
 
+#testimonials .small-card{
+    color: white;
+}
+
+/* WORK WITH US SECTION */
+#work-with-us{
+    text-align: center;
+}
+
+
+#work-with-us > h1{
+    font-size: 2.5em;
+    color: white;
+}
+
+#work-with-us .small-card{
+    align-items:start;
+    text-align: left;
+    padding: 32px;
+}
+
+#work-with-us .small-card h1{
+    font-size: 3em;
+    color: #9792E4;
+}
+
+#work-with-us .small-card h3{
+    font-size: 2em;
+    color: #9792E4;
+}
+
+#about-us h1{
+    color: #9792E4;
+    font-size: 2em;
+}
+
+#about-us h3{
+    color: #9792E4;
+    font-size: 1.5em;
+}
+
+#about-us a{
+    padding: 10px;
+
+}
+
+#about-us img{
+    border-radius: 50%;
+}
+
+/* GET STARTED */
+#get-started .big-card{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#get-started h2{
+    font-size: 1.5em;
+}
+
+#get-started h1{
+    font-size: 3em;
+    color: gold;
+}
+
+#get-started p{
+    font-size: 1em;
+
+}
+
+#get-started a{
+    background-color: white;
+    color: #9792E4;
+
+}
+
 /* FOOTER */
 .footer-info{
     margin: 0 auto;
@@ -185,6 +262,16 @@ img{
         width: 30%;
     }
 
+    /* TESTIMONIAL */
+    #testimonials .container{
+        
+    }
+
+    #testimonials .small-card{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-align: left;
+    }
 }
 /* DESKTOP */
 @media screen and (min-width:992px) {

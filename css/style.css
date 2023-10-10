@@ -11,6 +11,26 @@ body{
     font-family: sans-serif;
 }
 
+
+a.button{
+    text-decoration: none;
+    font-size: 1.5em;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 20px;
+    width: 80%;
+    color: white;
+}
+
+.btn-lilla{
+    background-color: #9792E4;
+}
+
+.btn-blue{
+    background-color: blue;
+}
+
 /* MOBILE FIRST */
 
 /* HEADER */
@@ -20,12 +40,16 @@ header nav{
     color: white;
 }
 
+header img{
+    width: 100px;
+}
+
 /* MAIN */
 
  main{
     
  }
-
+/* CONTAINER */
 .container{
     margin: 0 auto;
     width: 80%;
@@ -35,9 +59,15 @@ header nav{
 
 .big-card{
     width: 100%;
-    min-height: 600px;
     border-radius: 20px;
     margin: 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 32px;
+    line-height: 2em;
+
 }
 
 .small-card{
@@ -45,6 +75,74 @@ header nav{
     min-height: 300px;
     border-radius: 20px;
     margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 32px;
+    line-height: 2em;
+    padding: 32px 16px;
+}
+
+
+img{
+    width: 100%;
+}
+
+/* CARDS */
+
+#cards h2{
+    color: #0084FD;
+    font-size: 2em;
+}
+
+#cards p{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(99, 99, 99);
+}
+
+#cards .small-card i{
+    color: #0084FD;
+
+}
+
+/* STRATEGIC PLAN */
+
+#strategic-plan .big-card{
+    color: white;
+}
+
+#strategic-plan .big-card h2{
+    font-size: 2.5em;
+}
+
+#strategic-plan .small-card a{
+    color: black;
+    border-radius: 50%;
+    width: 2em;
+}
+
+/* TESTIMONIALS */
+#testimonials .container{
+    line-height: 2em;
+    text-align: center;
+}
+
+#testimonials h4, p{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#testimonials h3{
+    font-size: 2em;
+    color: #9792E4;
+}
+
+#testimonials img{
+    border-radius: 50%;
 }
 
 /* FOOTER */
